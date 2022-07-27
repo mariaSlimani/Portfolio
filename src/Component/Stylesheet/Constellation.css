@@ -1,0 +1,141 @@
+header #constellation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+}
+
+header .const-star {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+header .const-star.notCurrent {
+  cursor: pointer;
+}
+header .const-stars {
+  background-color: inherit;
+  padding: 0 10px;
+  z-index: 5;
+  filter: drop-shadow(0px 0px 6px rgba(255, 202, 177, 0.3));
+}
+header .const-star.notCurrent .const-stars {
+  filter: drop-shadow(0px 0px 6px rgba(255, 249, 177, 0.3));
+}
+header #constellation .const-label {
+  color: white;
+  visibility: visible;
+  text-shadow: 0px 0px 5px rgba(255, 249, 177, 0.6);
+}
+header #constellation .const-star.notCurrent .const-label {
+  cursor: pointer;
+}
+.const-star.Accueil-span {
+  top: 5%;
+  left: 5%;
+}
+.const-star.Education-span {
+  top: 12%;
+  left: 15%;
+}
+.const-star.Experience-span {
+  top: 17%;
+  left: 23%;
+}
+.const-star.Projets-span {
+  top: 30%;
+  left: 40%;
+}
+.const-star.Competences-span {
+  top: 40%;
+  left: 27%;
+}
+.const-star.Interets-span {
+  top: 40%;
+  left: 55%;
+}
+.const-star.La-suite-span {
+  top: 50%;
+  left: 45%;
+}
+.const-star.Contactez-moi-span {
+  top: 15%;
+  left: 70%;
+}
+.const-line {
+  z-index: 4;
+}
+
+@media (width<800px) {
+    
+.const-star.Accueil-span {
+    top: 5%;
+    left: 5%;
+  }
+  .const-star.Education-span {
+    top: 12%;
+    left: 15%;
+  }
+  .const-star.Experience-span {
+    top: 17%;
+    left: 27%;
+  }
+  .const-star.Projets-span {
+    top: 22%;
+    left: 49%;
+  }
+  .const-star.Competences-span {
+    top: 30%;
+    left: 37%;
+  }
+  .const-star.Interets-span {
+    top: 30%;
+    left: 65%;
+  }
+  .const-star.La-suite-span {
+    top: 40%;
+    left: 55%;
+  }
+  .const-star.Contactez-moi-span {
+    top: 10%;
+    left: 70%;
+  }
+}
+@media (width<650px) {
+
+    .const-star.Accueil-span {
+        top: 7%;
+        left: 5%;
+      }
+      .const-star.Education-span {
+        top: 15%;
+        left: 20%;
+      }
+      .const-star.Experience-span {
+        top: 20%;
+        left: 34%;
+      }
+      .const-star.Projets-span {
+        top: 23%;
+        left: 60%;
+      }
+      .const-star.Competences-span {
+        top: 35%;
+        left: 45%;
+      }
+      .const-star.Interets-span {
+        top: 30%;
+        left: 85%;
+      }
+      .const-star.La-suite-span {
+        top: 45%;
+        left: 70%;
+      }
+      .const-star.Contactez-moi-span {
+        top: 10%;
+        left: 70%;
+      }
+}

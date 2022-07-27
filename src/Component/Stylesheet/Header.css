@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Stars;
+  src: url("./../../Ressources/fonts/Stars-DEa1.ttf");
+}
+header {
+  background-color: var(--darkBlue);
+  width: 100vw;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 400px;
+  padding: 5px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  clip-path: polygon(50% 0%, 100% 0, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 0 0);
+}
+header #profilePic {
+  width: 13vw;
+  max-width: 250px;
+  min-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px double var(--yellowish);
+  box-shadow: 0px 0px 20px -6px rgba(240, 202, 120, 0.4);
+  z-index: 2;
+  align-self: flex-end;
+}
+header h1 {
+  color: white;
+  margin: 0;
+  z-index: 2;
+  font-size: 2rem;
+  font-family: Stars;
+}
+header h4 {
+  color: white;
+  margin: 0;
+  z-index: 2;
+}
+@media (width<800px) {
+  header {
+    min-height: 500px;
+    padding: 5px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  header #profilePic {
+    align-self: center;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    align-self: center;
+    margin: 10px 0;
+  }
+}
+@media (width<650px) {
+  header {
+    clip-path: polygon(
+      50% 0%,
+      100% 0,
+      100% 60%,
+      80% 100%,
+      20% 100%,
+      0 60%,
+      0 0
+    );
+  }
+  header h1 {
+    font-size: 1.2rem;
+  }
+}
+@media (width<450px) {
+  header {
+    clip-path: none
+  }
+  header h1 {
+    font-size: 1rem;
+  }
+}
