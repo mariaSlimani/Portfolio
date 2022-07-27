@@ -1,5 +1,4 @@
 import './App.css';
-import Header from './Component/Header';
 import {
   BrowserRouter as Router,
   Route,
